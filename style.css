@@ -4,3 +4,8 @@
   font-weight: <weight>;
   font-style: normal;
 }
+
+body {
+  text-align: center;
+  padding: 2rem;
+}
