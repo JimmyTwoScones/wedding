@@ -17,7 +17,7 @@ h2, h3 {
 }
 
 .container {
-  padding: 2rem 10vh;
+  padding: 10vh 2rem;
   border: 2px solid salmon;
   max-width: 720px;
   margin: auto;
