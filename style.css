@@ -11,4 +11,5 @@ body {
 .container {
   padding: 2rem;
   border: 2px solid salmon;
+  max-width: 720px;
 }
