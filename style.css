@@ -4,8 +4,12 @@ body {
   padding: 2rem;
   font-family: "EB Garamond", serif;
   font-optical-sizing: auto;
-  font-weight: 500;
+  font-weight: 400;
   font-style: normal;
+}
+
+.bold {
+  font-weight: 500;
 }
 
 .container {
