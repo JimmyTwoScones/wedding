@@ -17,6 +17,7 @@ h2, h3 {
 }
 
 .image {
+  display: block;
   background: url(/rozandjim.webp) no-repeat center center;
   width: 10vw;
   min-height: 100%;
