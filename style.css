@@ -38,6 +38,8 @@ h2, h3 {
 }
 
 .info {
+  margin: 1rem;
+  border: 1px dashed #df5c35;
   padding: 2rem;
   width: 100%;
   display: flex;
