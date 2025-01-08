@@ -9,7 +9,7 @@ body {
   font-optical-sizing: auto;
   font-weight: 300;
   font-style: normal;
-  background: url(/img/rosie-illo.webp) no-repeat center center;
+  background: url(/img/rosie-illo.jpg) no-repeat center center;
   background-size: cover;
   min-height: 100vh;
   margin: 0;
@@ -38,7 +38,7 @@ h2, h3 {
 
 .info {
   margin: 1rem;
-  border: 1px dashed #df5c35;
+  border: 1px dashed #486fba;
   padding: 2rem;
   width: 100%;
   display: flex;
