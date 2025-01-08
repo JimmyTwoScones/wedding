@@ -6,7 +6,8 @@ body {
   font-optical-sizing: auto;
   font-weight: 300;
   font-style: normal;
-  background:#d0d69b;
+  background: url(/img/rosie-illo.webp) no-repeat center center;
+  background-size: cover;
   min-height: 100vh;
   margin: 0;
   box-sizing: border-box;
