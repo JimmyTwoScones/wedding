@@ -57,5 +57,59 @@ h2, h3 {
 }
 
 .grey {
-  color:#60646e;
+  color:#5e7695;
+}
+
+
+        /* Accordion Header */
+        .accordion {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          cursor: pointer;
+          padding: 10px;
+          background-color: #f9f9f9;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+      }
+
+      .accordion:hover {
+          background-color: #f1f1f1;
+      }
+
+      .accordion-title {
+          font-size: 1.2em;
+          font-weight: bold;
+          margin: 0;
+      }
+
+      .accordion-icon {
+          font-size: 1.5em;
+          transition: transform 0.2s ease-in-out;
+      }
+
+      .accordion-icon.open {
+          transform: rotate(45deg); /* Rotate for "minus" when open */
+      }
+
+      /* Accordion Content */
+      .accordion-content {
+          display: none; /* Hidden by default */
+          padding: 15px;
+          border: 1px solid #ccc;
+          border-top: none;
+          border-radius: 0 0 5px 5px;
+          background-color: #fff;
+      }
+
+
+#mc_embed_signup {
+  font: 14px Helvetica,Arial,sans-serif; 
+  padding-top: .5rem;
+  clear:left; 
+  width: 100%;
+}
+
+#mc_embed_signup .button {
+  min-height: 44px;
 }

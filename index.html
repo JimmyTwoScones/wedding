@@ -1,31 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Anton&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Fjalla+One&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="css/animate.css">
-  <title>Save the Date</title>
-</head>
-<body>
-  <div class="container wow fadeInUp">
-    <!-- <div class="image"></div>  -->
-    <div class="info">
-      <h2><span class="bold">Save the date: </span></h2>
-      <h1>14th June 2025</h1>
-      <h2>It's the wedding of Rabs & Jim tbf.</h2>
-      <p class="grey">Location: Caynham Mill, Ludlow</p>
-      <p class="grey">More information to follow.</p>
-      <p class="grey"><b>RSVP</b> by contacting your Rosie & Jim representative</p>
-    <br>
-  </div>
-  </div>
-</body>
-<script src="js/wow.min.js"></script>
-              <script>
-              new WOW().init();
-</script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Fjalla+One&family=Oswald:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+    <link
+      href="//cdn-images.mailchimp.com/embedcode/classic-061523.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <title>Daytime guests information</title>
+  </head>
+
+  <body>
+    <div class="container wow fadeInUp">
+      <!-- <div class="image"></div>  -->
+      <div class="info">
+        <h2><span class="bold">Save the date: </span></h2>
+        <h1>14th June 2025</h1>
+        <h2>It's the wedding of Rabs & Jim tbf.</h2>
+        <p class="grey">Location: Caynham Mill, Ludlow</p>
+        <p class="grey">
+          More information will follow, please RVSP by exapnding the section
+          below and we will keep guests up-to-date via e-mail.
+        </p>
+
+        <br />
+
+        <div id="rsvp-form-container"></div>
+      </div>
+    </div>
+  </body>
+
+  <script>
+    // Dynamically load the form from form.html
+    fetch("rsvp.html")
+      .then((response) => response.text())
+      .then((data) => {
+        document.getElementById("rsvp-form-container").innerHTML = data;
+      })
+      .catch((error) => console.error("Error loading the form:", error));
+
+    function toggleAccordion(accordionElement) {
+      const content = accordionElement.nextElementSibling;
+      const icon = accordionElement.querySelector(".accordion-icon");
+
+      if (content.style.display === "block") {
+        content.style.display = "none"; // Close accordion
+        icon.textContent = "+"; // Change to plus
+        icon.classList.remove("open");
+      } else {
+        content.style.display = "block"; // Open accordion
+        icon.textContent = "−"; // Change to minus
+        icon.classList.add("open");
+      }
+    }
+  </script>
 </html>
