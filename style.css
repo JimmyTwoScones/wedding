@@ -16,6 +16,10 @@ body {
   color: #002140;
 }
 
+.evening {
+  background-image: url(/img/rosie-illo-eve.webp);
+}
+
 h1,
 h2,
 h3,
