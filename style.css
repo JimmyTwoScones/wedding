@@ -131,6 +131,17 @@ a {
   transition: transform 0.2s ease-in-out;
 }
 
+.photo {
+  background-image: url(/img/rozandjim.jpg);
+  background-position: center center;
+  background-size: cover;
+  width: 100%;
+  max-width: 360px;
+  height: 300px;
+  border-radius: 20px;
+  margin: 0 auto 2.5rem auto;
+}
+
 .accordion-icon.open {
   transform: rotate(45deg); /* Rotate for "minus" when open */
 }
