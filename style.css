@@ -189,6 +189,9 @@ a {
 }
 
 @media (max-width: 600px) {
+  .container {
+    border-radius: 4px;
+  }
   .address-col {
     flex-wrap: wrap;
   }
