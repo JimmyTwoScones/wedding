@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+    <link
+      href="//cdn-images.mailchimp.com/embedcode/classic-061523.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <title>Evening guest information</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="info">
+        <div class="m-w">
+          <h2 class="bold purp">– Save the Date –</h2>
+          <h1>Saturday 14th June 2025</h1>
+          <p>
+            Rosie & Jim are getting married and would love for you to join them
+            for an evening of celebrations and dancing in a field.
+          </p>
+
+          <div class="photo"></div>
+
+          <div class="details">
+            <p class="highlight">
+              Please arrive from 6PM. Food will be available.
+            </p>
+
+            <div class="address-col flex">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2436.991137783332!2d-2.671362!3d52.352446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487069f2d544af93%3A0x77271d3f0944fedb!2sLudlow%20Ecolog%20Cabins!5e0!3m2!1sen!2suk!4v1737577699545!5m2!1sen!2suk"
+                width="350"
+                height="240"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+
+              <p class="l-a address">
+                Ludlow Ecolog Cabins <br />
+                Caynham Mill <br />
+                Ludlow<br />
+                Shropshire<br />
+                SY8 3BH
+              </p>
+            </div>
+          </div>
+
+          <div class="cta">
+            <p>
+              You can find some basic information about accomodation and travel
+              <a href="/information-eve.html">here</a> for the time being.
+              Further details will be coming soon.
+            </p>
+            <p>
+              We kindly ask that you RSVP by filling in the form below within
+              the next three weeks
+            </p>
+          </div>
+
+          <div id="rsvp-form-container"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script>
+    // Dynamically load the form from form.html
+    fetch("rsvp.html")
+      .then((response) => response.text())
+      .then((data) => {
+        document.getElementById("rsvp-form-container").innerHTML = data;
+      })
+      .catch((error) => console.error("Error loading the form:", error));
+
+    function toggleAccordion(accordionElement) {
+      const content = accordionElement.nextElementSibling;
+      const icon = accordionElement.querySelector(".accordion-icon");
+
+      if (content.style.display === "block") {
+        content.style.display = "none"; // Close accordion
+        icon.textContent = "+"; // Change to plus
+        icon.classList.remove("open");
+      } else {
+        content.style.display = "block"; // Open accordion
+        icon.textContent = "−"; // Change to minus
+        icon.classList.add("open");
+      }
+    }
+  </script>
+</html>
