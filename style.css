@@ -13,7 +13,7 @@ body {
   min-height: 100vh;
   margin: 0;
   box-sizing: border-box;
-  color: #051635;
+  color: #002140;
 }
 
 h1,
@@ -34,7 +34,7 @@ p {
   font-size: 1.13rem;
   margin-top: 0;
   margin-bottom: 2.5rem;
-  color: #4e6478;
+  color: #5e7386;
 }
 
 .bold {
@@ -44,6 +44,17 @@ p {
 .purp,
 a {
   color: #5a6db1;
+}
+
+/* .nav,
+.nav a,
+.nav a:visited {
+  color: #002140;
+  text-decoration: none;
+} */
+
+.nav {
+  margin-bottom: 1.5rem;
 }
 
 .flex {
@@ -101,13 +112,13 @@ a {
   align-items: center;
   cursor: pointer;
   padding: 8px 16px;
-  background-color: #f4f7fb;
-  border: 1px solid #486fba;
+  background-color: #eff5f6;
+  border: 1px solid #ccd7d9;
   border-radius: 5px;
 }
 
 .accordion:hover {
-  background-color: #f1f1f1;
+  background-color: #d8e2e4;
 }
 
 .accordion-title {
@@ -145,9 +156,13 @@ a {
   margin-bottom: 0;
 }
 
+.highlight {
+  color: #002140;
+}
+
 .address-col {
   padding: 1rem;
-  background-color: #f4f7fb;
+  background-color: #eff5f6;
   border-radius: 8px;
   margin-bottom: 2.5rem;
 }
